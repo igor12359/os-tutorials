@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalacja Windows - OS Install</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">OS Install</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="windows.html">Windows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mint.html">Linux Mint</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arch.html">Arch Linux</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pliki.html">Pliki</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 bg-gradient text-center" style="background: linear-gradient(45deg, #0078d4, #00bcf2);">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Instalacja Windows 11</h1>
+            <p class="lead text-white-50">Przewodnik krok po kroku dla najnowszego systemu Microsoftu.</p>
+        </div>
+    </div>
+
+    <main class="container my-5">
+        <div class="row">
+            <aside class="col-lg-4 mb-4">
+                <div class="os-card p-4">
+                    <h4 class="mb-3 text-primary"><i class="bi bi-info-circle"></i> Wymagania</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="badge bg-primary me-2">CPU</span> 1 GHz, 2 rdzenie</li>
+                        <li class="mb-2"><span class="badge bg-primary me-2">RAM</span> 8 GB</li>
+                        <li class="mb-2"><span class="badge bg-primary me-2">Dysk</span> 64 GB</li>
+                        <li class="mb-2"><span class="badge bg-primary me-2">Inne</span> TPM 2.0</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="col-lg-8">
+                <div class="os-card p-4 mb-4">
+                    <h2 class="h4 mb-4 border-bottom pb-2">Krok 1: Pobieranie obrazu ISO i przygotowywanie instalatora</h2>
+                    <div class="alert alert-info">
+                        <strong>Wskazówka:</strong> Przygotuj pendrive o pojemności min. 8GB! <br>
+                        <strong>Uwaga:</strong> Instalacja może różnić się od tej przedstawionej na filmie, ponieważ został tutaj użyty nowszy obraz systemu Windows.
+                    </div>
+                    <p>Aby zdobyć obraz ISO systemu Windows musimy pobrać program Media Creation Tool dostępny w zakładce ze wszystkimi zasobami. Oficjalny program do tworzenia obrazu systemu Windows. Po otworzeniu programu przywita nas okno z umową licencyjną, klikamy "Accept" aby ją zaakceptować i przechodzimy dalej. <br><br> W następnym kroku wybieramy nasz język, który będzie używany podczas instalacji systemu, jak i w samym systemie. <br> Od razu po wybraniu języka wyświetli się informacja czy chcemy od razu przygotować gotowy do instalacji pendrive czy stworzyć sam plik ISO, w naszym przypadku wybieramy plik ISO. <br><br> Po wybraniu dostajemy informację gdzie chcemy zapisać nasz plik ISO. Wskazujemy na wybrany przez nas folder i plik zaczyna się pobierać. <br><br> Po pobraniu obrazu systemu wchodzimy w program Rufus, podpinamy pendrive do komputera i wybieramy go z listy, następnie wybieramy nasz plik ISO. Na tym etapie nie trzeba nic zmieniać. Klikamy przycisk "START".<br><br>Rufus najprawdopodobniej wyświetli komunikat, że możemy dostosować naszą instalację windowsa. Najlepiej odznaczyć wszystkie rzeczy oprócz "Disable data collection" i "Remove requirement for an online microsoft account", nie odznaczenie pozostałych rzeczy może zepsuć naszą instalację. <br> Klikamy przycisk "OK" i czekamy aż obraz wypali się na pendrive. <br><br> Na tym etapie przygotowywanie instalatora systemu jest gotowe</p>
+                </div>
+
+                <div class="os-card p-4 mb-4" style="border-style: dashed;">
+                    <h2 class="h4 mb-4 border-bottom pb-2 text-white">Krok 2: Proces instalacji systemu</h2>
+                    <p>Jeżeli nasz pendrive jest już gotowy to wkładamy go do komputera na którym chcemy zainstalować system, odpalamy komputer i przechodzimy do BIOSu - najczęściej robi się to klikając przycisk Delete lub F2 podczas odpalania komputera, lecz jeżeli nie mamy zainstalowanego żadnego systemu operacyjnego, to komputer sam do niego wejdzie. <br><br> Teraz przechodzimy do sekcji boot i wybieramy Windows Boot Manager jako opcja z najwyższym priorytetem odpalania. <br> Instalacja Windowsa jest bardzo prosta i nie trzeba się tutaj zagłębiać w szczegóły. Wystarczy, że potwierdzimy wybrany przez nas wcześniej język systemu, zaakceptujemy umowę licencyjną i wybierzemy dysk do instalacji systemu. <br><br> <b>UWAGA:</b> Musimy usunąć wszystkie partycje z dysku, na którym chcemy zainstalować system. Zalecane jest także aby podczas instalacji do komputera podłączony był tylko jeden dysk. <br><br> Po wybraniu dysku klikamy przycisk "Dalej" i reszta zrobi się za nas.<br> Po zakończeniu instalacji program instalacyjny poprosi nas o ponowne uruchomienie. Klikamy przycisk uruchom ponownie i odpinamy pendrive od komputera.<br> Komputer sam wykryje naszą nową instalację Windowsa i od razu zacznie odpalać się z dysku z systemem. <br><br> Teraz pozostaje nam do zrobienia wstępna konfiguracja systemu. System poprosi nas o stworzenie lub zalogowanie się kontem Microsoft, lecz jeżeli nie chcemy tego robić, w rogu ekranu powinna znajdować się opcja stworzenia konta lokalnego.<br><br> Zostaje nam jedynie wybranie do czego chcemy używać komputera i system automatycznie przeprowadzi ostateczną konfigurację. <br> Po chwili zostaniemy przeniesieni na pulpit i nasz system jest zainstalowany. <br><br> Warto pamiętać, że jeżeli chcemy w pełni wykorzystać moc naszych podzespołów warto jast zainstalować sterowniki do karty graficznej, ponieważ te instalowane przez Windows Update często mają błędy lub są przestarzałe. Reszta sterowników zostanie zainstalowana automatycznie. <br><br> Pozostałe narzędzia użyte w tej sekcji strony są dostępne pod zakładką Pliki.</p>
+                </div>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <a href="index.html" class="btn btn-outline-light">Wróć do startu</a>
+                    <a href="mint.html" class="btn btn-primary">Następny system: Mint →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-muted py-4">
+        <p>&copy; 2026 Kurs Instalacji Systemów</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

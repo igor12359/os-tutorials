@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pobieranie Narzędzi - OS Install</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">OS Install</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="windows.html">Windows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mint.html">Linux Mint</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arch.html">Arch Linux</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pliki.html">Pliki</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 bg-gradient text-center" style="background: linear-gradient(45deg, #2c3e50, #000000);">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Centrum Pobierania</h1>
+            <p class="lead text-white-50">Wszystkie niezbędne obrazy ISO i narzędzia w jednym miejscu.</p>
+        </div>
+    </div>
+
+    <main class="container my-5">
+        
+        <h2 class="mb-4"><i class="bi bi-disc me-2"></i>Obrazy Systemów</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="os-card p-4 h-100 d-flex flex-column">
+                    <h4>Windows 11</h4>
+                    <p class="flex-grow-1">Oficjalne narzędzie Media Creation Tool do pobrania najnowszej wersji Windows.</p>
+                    <a href="https://go.microsoft.com/fwlink/?linkid=2156295" target="_blank" class="btn btn-primary w-100">Pobierz program Media Creation Tool</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="os-card p-4 h-100 d-flex flex-column">
+                    <h4>Linux Mint</h4>
+                    <p class="flex-grow-1">Wersja Cinnamon - najbardziej polecana dla osób przechodzących z Windowsa.</p>
+                    <a href="https://linuxmint.com/download.php" target="_blank" class="btn btn-success w-100">Pobierz ISO</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="os-card p-4 h-100 d-flex flex-column">
+                    <h4>Arch Linux</h4>
+                    <p class="flex-grow-1">Czysty obraz dla zaawansowanych użytkowników.</p>
+                    <a href="https://ftp.icm.edu.pl/pub/Linux/dist/archlinux/iso/2026.02.01/archlinux-2026.02.01-x86_64.iso" target="_blank" class="btn btn-secondary w-100">Pobierz ISO</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5" style="border-color: #333;">
+
+        <h2 class="mb-4"><i class="bi bi-usb-drive me-2"></i>Narzędzia USB</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="os-card p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="display-6 me-3 text-primary"><i class="bi bi-lightning-fill"></i></div>
+                        <div>
+                            <h4 class="mb-1">Rufus</h4>
+                            <p class="mb-3">Najszybsze narzędzie do tworzenia bootowalnych pendrive'ów.</p>
+                            <a href="https://rufus.ie/" target="_blank" class="btn btn-outline-primary">Strona projektu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="os-card p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="display-6 me-3 text-info"><i class="bi bi-box-seam"></i></div>
+                        <div>
+                            <h4 class="mb-1">qBitTorrent</h4>
+                            <p class="mb-3">Wieloplatformowy, darmowy i otwartoźródłowy klient BitTorrent.</p>
+                            <a href="https://www.ventoy.net/" target="_blank" class="btn btn-outline-info">Strona projektu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center text-muted py-4">
+        <p>&copy; 2026 Kurs Instalacji Systemów | Wszystkie linki prowadzą do oficjalnych źródeł.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

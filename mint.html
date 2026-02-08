@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalacja Windows - OS Install</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">OS Install</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="windows.html">Windows</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="mint.html">Linux Mint</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arch.html">Arch Linux</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pliki.html">Pliki</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="py-5 bg-gradient text-center" style="background: linear-gradient(45deg, #0078d4, #00bcf2);">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Instalacja Linux Mint</h1>
+            <p class="lead text-white-50">Przewodnik krok po kroku dla systemu Linux Mint</p>
+        </div>
+    </div>
+
+    <main class="container my-5">
+        <div class="row">
+            <aside class="col-lg-4 mb-4">
+                <div class="os-card p-4">
+                    <h4 class="mb-3 text-primary"><i class="bi bi-info-circle"></i> Wymagania</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="badge bg-primary me-2">CPU</span> 64-bitowy procesor amd64</li>
+                        <li class="mb-2"><span class="badge bg-primary me-2">RAM</span> 2 GB</li>
+                        <li class="mb-2"><span class="badge bg-primary me-2">Dysk</span> 20 GB</li>
+                        <li class="mb-2"><span class="badge bg-primary me-2">Inne</span> Brak</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="col-lg-8">
+                <div class="os-card p-4 mb-4">
+                    <h2 class="h4 mb-4 border-bottom pb-2">Krok 1: Pobieranie obrazu ISO</h2>
+                    <div class="alert alert-info">
+                        <strong>Wskazówka:</strong> Przygotuj pendrive o pojemności min. 8GB!
+                    </div>
+                    <p>Pierwszym krokiem jest oczywiście pobranie obrazu systemu. Link do pobrania jest dostępny w zasobach. <br><br>Gdy nasz plik ISO jest już pobrany, procedura wypalenia go na pendrive dużo się nie różni - odpalamy program Rufus, wybieramy nowo pobrany plik ISO i wybieramy pendrive z listy. <br> Jedyna rzecz jakią musimy zmienić to schemat partycjonowania na GPT (jeżeli komputer, na którym system będzie instalowany używa UEFI). <br> Tym razem nie ustawiamy systemu plików na NTFS, zostawiamy Large FAT32 - to dla tego, że NTFS jest systemem plików dla Windowsa. <br><br> Po zmianie odpowiednich rzeczy klikamy przycisk "START". Po kliknięciu najprawdopodobniej pojawi się informacja o wyborze trybu zapisu obrazu na pendrive, najlepiej jest wybrać tryb ISO (jeżeli w dalszej części instalacji wystąpią jakieś błędy np. instalator się nie odpala, należy ponownie wypalic obraz używając trybu DD). Klikamy "OK" i czekamy aż obraz wypali się na pendrive. <br><br> Na tym etapie instalator jest gotowy i przechodzimy do kroku nr. 2</p>
+                </div>
+
+                <div class="os-card p-4 mb-4" style="border-style: dashed;">
+                    <h2 class="h4 mb-4 border-bottom pb-2 text-white">Krok 2: Placeholder na Twoją treść</h2>
+                    <p>Wydawać by się mogło, że instalacja Linuxa jest trudniejsza od instalacji Windowsa. Ale czy faktycznie tak jest? Na to pytanie nie ma jednoznacznej odpowiedzi - to zależy od dystrybucji jaką chcemy zainstalować. Niektóre dystrybucje potrzebują wiedzy o tym jak faktycznie zbudowany jest Linux i jak działa, a niektóre to kwestia przeklikania kilku okienek. Przedstawiona w tej części strony dystrybucja jest nawet prostsza w obsłudze i instalacji niż system microsoftu. <br><br> Na początku, tak samo jak przy instalacji Windowsa, wchodzimy do BIOSu i wybieramy odpalanie z pendrivea. <br><br> Po odpaleniu instalatora przywita nas <a href="zdjecia/mint/grub.png">taki ekran.</a> Jest to menu tak zwanego bootloader'a - programu, w którym wybieramy jak chcemy odpalic nasz system lub jakie narzędzia chcemy odpalić, wybieramy "Start Linux Mint" i klikamy Enter. <br><br> Po odpaleniu zobaczymy cały pulpit systemu a na nim ikonę "Install Linux Mint". Teraz przed instalacją możemy przetestować jak będzie działać nasz system i czy faktycznie chcemy go zainstalować.<br> Przechodzimy do instalacji systemu.<br><br> Klikamy ikonę znajdującą się na pulpicie i pokaże nam się <a href="zdjecia/mint/instalator-start.png">ekran instalatora</a> z możliwością wyboru języka. Wybieramy język w jakim chcemy używać systemu i przechodzimy dalej. W następnym kroku wybieramy nasz układ klawiatury (zazwyczaj jest on wykrywany automatycznie).<br><br> Po wybraniu układu klawiatury pokaże nam się <a href="zdjecia/mint/instalator-kodeki.png>">okienko z zapytaniem</a> czy chcemy zainstalować dodatkowe kodeki multimediów. Warto jest je zainstalować, ponieważ niektóre strony internetowe lub pliki multimedialne będą ich potrzebować. <br><br> <a href="zdjecia/mint/instalator-partycje.png">Następny krok</a> jest najważniejszy, tutaj decydujemy w jaki sposób chcemy podporządkować dysk do systemu. Najlepszym wyjściem jest wybranie opcji "Wyczyszczenie dysku i zainstalowanie Linux Mint". <strong>UWAGA:</strong> Usunie to wszystkie dane znajdujące się na dysku. <br> Jeżeli mamy zainstalowany na komputerze system Windows, do wyboru jest także opcja zainstalowania Linuxa obok Windowsa - nasza instalacja Windowsa nie zostanie skasowana i będziemy mogli wybrać jaki system chcemy odpalić w momencie uruchamiania komputera. <br> Idealne dla osób, które chcą wypróbować Linuxa, ale nie są pewne czy będzie im pasować. <br><br> Kolejny etap to wybranie odpowiedniej <a href="zdjecia/mint/instalator-strefa.png">strefy czasowej</a>. Zazwyczaj także jest ona wykrywana automatycznie. Przechodzimy dalej do ostatniego etapu. <br><br> Ostatnim co musimy zrobić jest <a href="zdjecia/mint/instalator-uzytkownik.png">stworzenie naszego użytkownika</a>. Po wypełnieniu wszystkich danych klikamy przycisk "Naprzód" i system nzacznie się instalować. <br><br> Po skończonej instalacji nasz system jest gotowy do użytku. W przeciwieństwie do Windowsa, nie musimy instalować żadnych sterowników samodzielnie. Wszystkie sterowniki są wypalone w jądro systemu. Warto pamiętać, że ta dystrybucja została stworzona z myślą o stabilności. Nie mamy tutaj najnowszych programów tylko wersje, które są najbardziej stabilne. Jeżeli chcesz dystrybucję, która ma wszystko w najnowszej wersji (tzw. rolling release), zapraszamy do następnej części strony.</p>
+                </div>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <a href="index.html" class="btn btn-outline-light">Wróć do startu</a>
+                    <a href="arch.html" class="btn btn-primary">Następny system: Arch →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center text-muted py-4">
+        <p>&copy; 2026 Kurs Instalacji Systemów</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
